@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "one-drive-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/oneDriveForm/OneDriveFormWebPart.js",
+          "manifest": "./src/webparts/oneDriveForm/OneDriveFormWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "OneDriveFormWebPartStrings": "lib/webparts/oneDriveForm/loc/{locale}.js"
+  }
+}

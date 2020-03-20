@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "SPFx OneDrive Migration Request WebPart",
+    "id": "a5cd10dc-c25d-4038-9824-40ab68383be5",
+    "version": "1.0.2.1",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-one-drive-form.sppkg"
+  }
+}
