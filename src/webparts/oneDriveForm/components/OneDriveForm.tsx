@@ -38,7 +38,7 @@ export default class OneDriveForm extends React.Component<IOneDriveFormProps, {}
           });
         } else {
           let usersName = this.props.webpartContext.pageContext.user.loginName.replace('i:0#.f|membership|', '').split("@")[0];
-
+          
           getItemsFromCompletedListByUser(this.props.webpartContext, usersName).then((response2) => {
             response2.json().then(responseJSON2 => {
               if (responseJSON2.value.length > 0) {
@@ -82,7 +82,7 @@ export default class OneDriveForm extends React.Component<IOneDriveFormProps, {}
           this.setState({
             userId: rJson.Id
           });
-
+          
           // after setting the user's ID, check if they have already submitted the form.
           this.checkIfSubmitted();
         });
@@ -103,6 +103,7 @@ export default class OneDriveForm extends React.Component<IOneDriveFormProps, {}
             typeName: rJson.ListItemEntityTypeFullName
           });
         });
+
       } else {
         this.setState({
           didError: true
@@ -165,6 +166,7 @@ export default class OneDriveForm extends React.Component<IOneDriveFormProps, {}
             <div className={styles.row}>
               <div className={styles.column}>
                 <span className={styles.title}>One Drive Migration Form</span>
+                
                 {/* <p className={styles.subTitle}>Subtitle goes here.</p> */}
                 <p className={styles.description}></p>
               </div>
