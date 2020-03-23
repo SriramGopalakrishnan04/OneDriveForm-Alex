@@ -188,7 +188,7 @@ export default class OneDriveForm extends React.Component<IOneDriveFormProps, {}
           <div className={styles.container}>
             <div className={styles.row}>
               <div className={styles.column}>
-                <span className={styles.title}>One Drive Migration Form</span>
+                <span className={styles.title}>OneDrive Migration Form</span>
                 {/* <p className={styles.subTitle}>Subtitle goes here.</p> */}
                 <p className={styles.description}>You have already submitted the request.</p>
               </div>
