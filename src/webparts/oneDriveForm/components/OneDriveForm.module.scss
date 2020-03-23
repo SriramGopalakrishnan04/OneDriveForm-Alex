@@ -11,7 +11,7 @@
   .row {
     @include ms-Grid-row;
     @include ms-fontColor-white;
-    background-color: transparent;
+    //background-color: transparent;
     padding: 20px;
     min-height: 320px;
   }
